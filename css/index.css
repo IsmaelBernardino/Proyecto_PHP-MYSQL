@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --blue: #102167;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 16px;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 20px 15px;
+    position: relative;
+}
+.header{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.form-outer{
+    width: 100%;
+    overflow: hidden;
+}
+.form{
+    display: flex;
+    width: 605%;
+}
+.page{
+    width: 16.5%;
+}
+.btn{ 
+    margin: 20px 0;
+}
+.page__btn{
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue);
+    color: #fff;
+    text-decoration: none;
+}
+.page__input{
+    width: 100%;
+    margin: 5px auto;
+    text-align: left;
+}
+.page__input:not(:first-child){
+    margin-left: 5px;
+}
+.page__input > label,
+.page__input > input,
+.page__input > select{
+    display: block;
+    width: 95%;
+    font-size: .8rem;
+}
+.page__input > input,
+.page__input > select{
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+.input__textarea{
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 150px;
+    max-height: 200px;
+    padding: 5px;
+}
+table, tbody{
+    width: 100%;
+    font-size: .6rem;
+    text-align: left;
+}
+tr th{
+    text-align: center;
+}
+td input{
+    width: 100%;
+}
+table tr:nth-child(even){
+    background: #10216725;
+}
+table tr input{
+    background: transparent;
+    border: 2px solid #bdc3c7;
+}
+.tema{
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.msj{
+    color: #f55;
+    font-size: .7rem;
+    text-align: left;
+}
+.usuario{
+    width: 95%;
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 270px;
+    padding: 5px;
+}
+.usuario::-webkit-scrollbar{
+    width: 5px;
+    background: #fff;
+    border: 1px solid #c2c2c2;
+}
+.usuario::-webkit-scrollbar-thumb{
+    background: steelblue;
+    border-radius: 5px;
+}
+.iconScroll{
+    animation: move 1s ease-in-out infinite;
+}
+.btnres{
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.responsable:nth-child(even){
+    background: #bdc3c7;
+    padding: 5px;
+}
+.Eliminar{
+    background: none;
+    border: none;
+    color: #f55;
+    cursor: pointer;
+}
+.reminder, .requerido{
+    color: #f55;
+    font-size: .8rem;
+    display: inline;
+}
+.txtdefecto{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.linkicono{
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    z-index: 50;
+}
+.iconoSalir{
+    background: var(--blue);
+    border-radius: 50%;
+    padding: 5px;
+}
+@keyframes move {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 565px) {
+    .container{
+        width: 550px;
+    }
+    table{
+        width: 90%;
+        margin: auto;
+        font-size: .8rem;
+    }
+    .linkicono{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
